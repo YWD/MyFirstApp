@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.myfirstapp.MainActivity">
+    tools:context="com.example.myfirstapp.main.MainActivity">
 
     <EditText
         android:id="@+id/editText"
@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:layout_marginLeft="16dp"
+        android:layout_marginLeft="33dp"
         android:layout_marginRight="16dp"
         android:layout_marginStart="33dp"
         android:onClick="sendMessage"
@@ -33,4 +33,25 @@
         app:layout_constraintBaseline_toBaselineOf="@+id/editText"
         app:layout_constraintLeft_toRightOf="@+id/editText"
         app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/country_name"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="206dp"
+        tools:layout_editor_absoluteY="431dp"
+        tools:layout_editor_absoluteX="264dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/country_flag"
+        android:layout_marginEnd="94dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        tools:layout_editor_absoluteY="408dp"
+        tools:layout_editor_absoluteX="113dp" />
 </android.support.constraint.ConstraintLayout>
