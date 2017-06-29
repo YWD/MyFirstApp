@@ -6,8 +6,9 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.example.myfirstapp.R;
+import com.example.myfirstapp.base.BaseActivity;
 
-public class DisplayMessageActivity extends AppCompatActivity {
+public class DisplayMessageActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
